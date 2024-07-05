@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[placeholder="firstname"]{
+            background-color:black;
+        }
+        input[placeholder~="last"]
+        {
+            background-color:black;
+        }
+        input[placeholder|="Email"]{
+            background-color: black;
+        }
+        input[id^="nu"]{
+            background-color: black;
+        }
+         input[name$="rd"]{
+            background-color: black;
+        }
+        input[name="dob"]{
+            background-color:black;
+        }
+        textarea[placeholder]{
+            background-color:black;
+        }
+        input[value="Submit"]{
+            background-color: black;
+            color: aliceblue;
+        }
+        input[name|="Back"]
+        {
+            background-color: black;
+            color: aliceblue;
+        }
+
+</style>
+<body>
+    <div class="mb">
+        <h1>Registration form</h1>
+    <form action="">
+        <label for="Firstname"> Firstname :</label>
+            <input type="text" id="firstname" name="firstname" placeholder="firstname"/><br>
+            <br>
+            <label for="Lastname"> Lastname : </label>
+            <input type="text" id="lastname" name="lastname" placeholder="last name"/><br>
+            <br>
+            <label for="Email id"> Email Id :</label>
+            <input type="email" name="email" placeholder="Email-id"/><br>
+            <br>
+            <label for="Mobile number ">Mobile number:</label>
+            <input type="tel" id="number" name="Mobile" pattern="[0-9]{10}"/><br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="password"/><br>
+            <br>
+            <label for=" confirm password">confirm password:</label>
+            <input type="password" id="confirm password" name="confirm password" placeholder="confirmpassword"/><br>
+            <br>
+            <label for="enter">Gender:</label>
+            <input type="radio" id="male" value="male"  name="gender"> 
+            <label for="male">male</label>
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="female">female</label>
+            <br>
+            <br>
+            <label for="Date">Enter your Date of Birth:</label>
+            <input type="date" value="dob" name="dob"/><br>
+            <br>
+            <label for="Address">Enter your Address:</label>
+            <textarea  name="address" placeholder="address"></textarea><br>
+            <br>
+            <br>
+            
+            <input type="submit" value="Submit"/>
+            <br><br>
+            <label for="login"></label>
+            <input type="submit" value="Back to login" name="Back-to-login" formaction="../Task8/forms.html"><br>
+            <br>
+
+
+
+    </form>
+    </div>
+</body>
+</html>
